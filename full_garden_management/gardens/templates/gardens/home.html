@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garden Management</title>
+</head>
+<body>
+    <h1>My Garden</h1>
+    <ul>
+        {% for plant in plants %}
+            <li>{{ plant.name }} - Watering: {{ plant.watering_schedule }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
